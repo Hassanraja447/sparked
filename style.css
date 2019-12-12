@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+/* variables */
+:root {
+  --color-primary: #234c8b;
+  --color-secondary: #f78663;
+  --color-tertiary: #f9ff52;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #2a2a2a;
+  /* background-color: orangered; */
+}
+
+/* bootstrap override */
+.btn-primary {
+  background-color: var(--color-primary);
+}
+.color-primary {
+}
+.btn-secondary {
+  background-color: var(--color-secondary);
+}
+.btn-tertiary {
+  background-color: var(--color-tertiary);
+}
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+
+/* utilities classes */
+.header-margin {
+  margin-bottom: 2rem;
+}
+.u-padding-md-vertical {
+  padding: 2rem 0;
+}
+.u-margin-xs-bottom {
+  margin-bottom: 2rem;
+}
+.u-margin-sm-bottom {
+  margin-bottom: 4rem;
+}
+.u-margin-md-bottom {
+  margin-bottom: 6rem;
+}
+.u-margin-lg-bottom {
+  margin-bottom: 8rem;
+}
+
+/* header */
+
+.header {
+  background-color: var(--color-primary);
+  background: no-repeat center/cover url("./img/header-bg.png");
+  color: white;
+}
+.header__brand {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.header__brand:hover {
+  color: white;
+  text-decoration: none;
+}
+.header__cta {
+  border-radius: 2.5rem;
+  font-size: 2.4rem;
+  padding: 1rem 3rem;
+  margin-bottom: 6rem !important;
+  font-weight: 500;
+}
+.header__cta:hover {
+  background-color: #e8400c;
+}
+.problem {
+  color: #2a2a2a;
+}
+.problem__outer-container {
+  background-color: #f3f3f3;
+  padding: 2rem 0;
+}
+.problem__container {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+/* custome list style color */
+.problem__list {
+  list-style: none; /* Remove default bullets */
+}
+
+.problem__list li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--color-secondary); /* Change the color */
+  font-weight: 800; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.6rem; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+/* help */
+.help {
+  background-color: #f3f3f3;
+  padding: 2rem 0;
+}
+.help__card {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.help__icon {
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  color: white;
+  height: 5rem;
+  justify-content: center;
+  font-size: 2rem;
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.video__frame {
+  height: 350px;
+}
+
+/* benefits */
+.benefits {
+  background-color: #f3f3f3;
+  padding: 2rem 0;
+}
+.benefits__list {
+  background-color: #fff;
+  list-style: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 2rem;
+  margin-top: 4rem;
+}
+.benefits__list li {
+  margin-bottom: 2rem;
+}
+.benefits__icon {
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/* contact */
+.contact {
+  background-color: #fff;
+  margin-top: 2rem;
+}
+.contact__form {
+  background-color: #f3f3f3;
+
+  color: #8a8a8a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+.form__submit {
+  cursor: pointer;
+  padding: 1rem 8rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  background-color: var(--color-primary);
+  background-image: url("./img/footer-bg.png");
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  color: white;
+  z-index: 1000;
+  padding: 6rem 0;
+}
+.footer__input {
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.footer__input:focus {
+  outline: none;
+}
+.info {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* media queries */
+@media (min-width: 57.6rem) {
+  .header-margin {
+    margin-bottom: 4rem;
+  }
+  .contact__form {
+    background: linear-gradient(
+      to right,
+      #f3f3f3 0%,
+      #f3f3f3 95%,
+      #fff 95%,
+      #fff 100%
+    );
+  }
+}
+@media (min-width: 768px) {
+  .header-margin {
+    margin-bottom: 6rem;
+  }
+  .video__frame {
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .header-margin {
+    margin-bottom: 8rem;
+  }
+  .problem__outer-container {
+    background: linear-gradient(
+      to right,
+      #f3f3f3 0%,
+      #f3f3f3 70%,
+      #fff 70%,
+      #fff 100%
+    );
+  }
+  .problem__container {
+    margin-top: -4rem;
+  }
+  .benefits {
+    background: linear-gradient(
+      to right,
+      #f3f3f3 0%,
+      #f3f3f3 70%,
+      #fff 70%,
+      #fff 100%
+    );
+  }
+  .help {
+    background: linear-gradient(
+      to left,
+      #f3f3f3 0%,
+      #f3f3f3 70%,
+      #fff 70%,
+      #fff 100%
+    );
+  }
+}
+@media (min-width: 120rem) {
+}
