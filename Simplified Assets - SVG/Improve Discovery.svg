@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="123" viewBox="0 0 123 123">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #234c8b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_1);
+      }
+    </style>
+    <filter id="Ellipse_1" x="0" y="0" width="123" height="123" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Improve_Discovery" data-name="Improve Discovery" transform="translate(-622 -1034)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 622, 1034)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" class="cls-1" cx="52.5" cy="52.5" r="52.5" transform="translate(9 6)"/>
+    </g>
+    <path id="ic_zoom_in_24px" class="cls-2" d="M40.5,36H38.13l-.84-.81a19.529,19.529,0,1,0-2.1,2.1l.81.84V40.5L51,55.47,55.47,51Zm-18,0A13.5,13.5,0,1,1,36,22.5,13.482,13.482,0,0,1,22.5,36Z" transform="translate(655 1063)"/>
+  </g>
+</svg>

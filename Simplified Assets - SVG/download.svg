@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="123" viewBox="0 0 123 123">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #234c8b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_5);
+      }
+    </style>
+    <filter id="Ellipse_5" x="0" y="0" width="123" height="123" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Increase_Conversions" data-name="Increase Conversions" transform="translate(-254 -1034)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 254, 1034)">
+      <circle id="Ellipse_5-2" data-name="Ellipse 5" class="cls-1" cx="52.5" cy="52.5" r="52.5" transform="translate(9 6)"/>
+    </g>
+    <path id="ic_play_for_work_24px" class="cls-2" d="M21,5V21.77H10.5L24,35.27l13.5-13.5H27V5ZM6,32a18,18,0,0,0,36,0H36a12,12,0,0,1-24,0Z" transform="translate(292 1065)"/>
+  </g>
+</svg>
