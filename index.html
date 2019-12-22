@@ -22,7 +22,7 @@
     <title>Sparked</title>
   </head>
   <body>
-    <header class="header section-gutter">
+    <!-- <header class="header section-gutter">
       <div class="container">
         <div class="row">
           <div class="col py-5 text-sm-left text-center   header-margin">
@@ -31,42 +31,69 @@
         </div>
         <div class="row ">
           <div class="col-sm-6">
-            <p class="h1 font-weight-regular my-2 mb-4 text-uppercase">
+            <h1 class="header__lead  my-2 mb-4 text-uppercase">
               Never lose a customer again
-            </p>
-            <p class="h2 font-weight-light my-2 mb-5">
+            </h1>
+            <p class=" header__description my-2 mb-5">
               Help your customers discover and purchase new wines and spirits.
               Bring influential wine & spirit reviews to your website.
             </p>
-            <div class="header-margin">
+            <div class="">
               <a
                 href="#"
                 class="  font-weight-medium text-uppercase my-2  header__cta "
-                >Become Customer</a
+                >Become A Customer</a
               >
             </div>
           </div>
-          <div class="col-sm-6"></div>
-        </div>
-      </div>
-      <div class="container abs d-none d-sm-inline">
-        <div class="row h-100">
-          <div class="col-sm-6 h-100">
-            <!-- empty spacer -->
-          </div>
-          <div class="col-sm-6 right">
-            <img src="img/header-image.png" alt="" />
+          <div class="col-sm-6">
+            <img src="img/header-image.png" alt="header" class="img-fluid " /> -->
+    <!-- <p class="text-dark">something funny urgh</p>
           </div>
         </div>
+       
       </div>
-    </header>
+
+    </header> -->
+
+    <!--Top_content-->
+    <section id="top_content" class="top_cont_outer section-gutter">
+      <!--Header_section-->
+      <header id="header_outer">
+        <div class="container">
+          <div class="header_section">
+            <div class="logo"><a href="index.html">sparked.it</a></div>
+          </div>
+        </div>
+      </header>
+      <!--Header_section-->
+      <div class="top_cont_inner">
+        <div class="container">
+          <div class="top_content">
+            <div class="row">
+              <div class="col-lg-5 col-sm-7">
+                <div class="top_left_cont flipInY wow animated">
+                  <h2>Never lose a customer again</h2>
+                  <p>
+                    Help your customers discover and purchase new wines and
+                    spirits. Bring influential wine & spirit reviews to your
+                    website.
+                  </p>
+                  <a href="#service" class="learn_more2">Become a customer</a>
+                </div>
+              </div>
+              <div class="col-lg-7 col-sm-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Top_content-->
     <section class="problem section-gutter">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2
-              class="section-heading font-weight-regular u-margin-xs-bottom mb-lg-5"
-            >
+            <h2 class="section-heading font-weight-regular u-margin-lg-bottom ">
               Problem?
             </h2>
           </div>
@@ -84,20 +111,22 @@
                 <li>
                   While your customer is in the middle of online shopping, do
                   you notice they tend to randomly abandon your site without any
+                  explanation.
                 </li>
                 <li>
-                  understanding why? Are the same items being purchased over and
-                  over again off your website?
+                  Are you frustrated that customers don’t take the time to truly
+                  shop your catalogue and would rather purchase the same items
+                  over and over again?
                 </li>
               </ul>
               <p class="h3 font-weight-medium">WHY IS THIS AN ISSUE?</p>
               <p>
                 Your business is losing customers to the Internet and you have
-                no defense. There’s no real explanation why each particular
-                customer leaves your site, and that can be frustrating. It hurts
-                the business’s bottom line, and ultimately doesn’t give us any
-                better understanding of how to improve the end user experience
-                that could lead to frequent conversions
+                no defense to it. There’s no real explanation why each
+                particular customer leaves your site, and that can be
+                frustrating. It hurts the business’s bottom line, and ultimately
+                doesn’t give us any better understanding of how to improve the
+                end user experience.
               </p>
             </div>
           </div>
@@ -108,7 +137,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="section-heading u-margin-xs-bottom">
+            <h2 class="section-heading u-margin-sm-bottom">
               how we help businessES?
             </h2>
           </div>
@@ -188,16 +217,16 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="section-heading u-margin-xs-bottom">
+            <h2 class="section-heading u-margin-sm-bottom">
               Benefits to expect
             </h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-12  col-lg-6 mb-3 mb-sm-5">
-            <img src="img/mock.png" alt="" class="img-fluid" />
+          <div class="col-12  col-lg-7 mb-3 mb-sm-5">
+            <img src="img/mock.png" alt="" class="benefits__image" />
           </div>
-          <div class="col-12 col-lg-6 ">
+          <div class="col-12 col-lg-5 ">
             <ul class="benefits__list">
               <li class="d-flex align-items-center">
                 <img
@@ -247,7 +276,7 @@
     <section class="contact ">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col offset-sm-2">
             <h2 class="section-heading">
               KNOW MORE
             </h2>
@@ -258,14 +287,14 @@
         </div>
       </div>
       <div class="container-fluid contact__form">
-        <div class="container ">
+        <div class="container py-3">
           <div class="row">
-            <div class="col col-sm-8 sm-offset-4">
+            <div class="col  col-sm-10 offset-sm-2">
               <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="name" class="form__label">Full Name</label>
-                    <input type="text" class="form-control  form__input" />
+                    <input type="text" class="form-control  form__input " />
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputEmail4" class="form__label">Email</label>
@@ -286,7 +315,7 @@
                 <div class="form-row">
                   <button
                     type="submit"
-                    class="btn btn-primary ml-auto  text-uppercase form__submit"
+                    class=" ml-auto  text-uppercase form__submit"
                   >
                     submit
                   </button>
@@ -300,9 +329,9 @@
     <footer class="footer ">
       <div class="container">
         <div class="row">
-          <div class="col-12 offset-sm-2 col-sm-4 mb-3">
+          <div class="col-12 offset-lg-2 col-lg-4 mb-3">
             <div class="d-flex flex-column">
-              <p class="footer__text">
+              <p class="footer__text mb-lg-5">
                 Become our first customer, leave us an email.
               </p>
               <div class="form-group mycustom">
@@ -319,12 +348,14 @@
               </div>
             </div>
           </div>
-          <div class="col-12  col-sm-4">
+          <div class="col-12  col-lg-4 offset-lg-1">
             <div class="d-flex flex-column">
-              <p class="h1 font-weight-bold text-uppercase">Sparked.it</p>
+              <p class="h1 font-weight-bold text-uppercase mb-lg-5">
+                Sparked.it
+              </p>
               <p class="footer__text">
-                Attaching the internet's wine and spirit reviews to your product
-                pages on your website broken down by critical reviews.
+                Attaching the pre-existing wine and spirit reviews to your
+                website.
               </p>
             </div>
           </div>
@@ -347,10 +378,10 @@
           <div
             class="col-12 col-sm-6 mt-2 d-flex align-items-center justify-content-center justify-content-sm-end"
           >
-            <i class="fab fa-twitter mx-2"></i>
-            <i class="fab fa-facebook-f mx-2"></i>
-            <i class="fab fa-instagram mx-2"></i>
-            <i class="fab fa-pinterest-p mx-2"></i>
+            <i class="fab fa-twitter mx-3"></i>
+            <i class="fab fa-facebook-f mx-3"></i>
+            <i class="fab fa-instagram mx-3"></i>
+            <i class="fab fa-pinterest-p mx-3"></i>
           </div>
         </div>
       </div>
