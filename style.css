@@ -215,7 +215,7 @@ a.learn_more2 {
   color: white;
   border-radius: 3.6rem;
   font-size: 2.4rem;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   font-weight: 600;
 }
 a.learn_more2:hover {
@@ -345,7 +345,6 @@ a.learn_more2:hover {
   background-color: var(--color-primary);
   color: white;
   border: none;
-  width: 40%;
   padding: 2rem 3rem;
 
   margin-top: 2rem;
@@ -416,7 +415,7 @@ a.learn_more2:hover {
 }
 
 /* media queries */
-@media (min-width: 57.6rem) {
+@media (min-width: 576px) {
   html {
     font-size: 64.5%;
   }
@@ -427,15 +426,12 @@ a.learn_more2:hover {
   .header-margin {
     margin-bottom: 4rem;
   }
-  /* .contact__form {
-    background: linear-gradient(
-      to right,
-      #f3f3f3 0%,
-      #f3f3f3 95%,
-      #fff 95%,
-      #fff 100%
-    );
-  } */
+  a.learn_more2 {
+    padding: 2rem 3rem;
+  }
+  .form__submit {
+    width: 40%;
+  }
 }
 @media (min-width: 768px) {
   .header-margin {
