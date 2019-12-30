@@ -345,8 +345,6 @@ a.learn_more2:hover {
   background-color: var(--color-primary);
   color: white;
   border: none;
-  padding: 2rem 3rem;
-
   margin-top: 2rem;
 }
 .form__label {
@@ -433,6 +431,7 @@ a.learn_more2:hover {
 
   .form__submit {
     width: 40%;
+    padding: 2rem 3rem;
   }
 }
 @media (min-width: 768px) {
