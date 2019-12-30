@@ -214,8 +214,8 @@ a.learn_more2 {
   background-color: var(--color-secondary);
   color: white;
   border-radius: 3.6rem;
-  font-size: 2.4rem;
-  padding: 2rem 2rem;
+  font-size: 1.6rem;
+  padding: 2rem;
   font-weight: 600;
 }
 a.learn_more2:hover {
@@ -428,7 +428,9 @@ a.learn_more2:hover {
   }
   a.learn_more2 {
     padding: 2rem 3rem;
+    font-size: 2.4rem;
   }
+
   .form__submit {
     width: 40%;
   }
