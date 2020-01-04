@@ -169,7 +169,9 @@ body {
   position: relative;
   padding-top: 50px;
 }
-
+.header__content {
+  margin: 1rem 0;
+}
 .white_pad {
   position: relative;
   right: 0px;
@@ -198,7 +200,7 @@ body {
 .top_left_cont p {
   font-size: 16px;
   color: #888888;
-  margin-bottom: auto;
+  margin-bottom: 2rem;
   line-height: 1.2;
   font-size: 2.4rem;
   font-weight: 500;
@@ -244,13 +246,10 @@ a.learn_more2:hover {
   list-style: none; /* Remove default bullets */
 }
 
-.problem__list li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: var(--color-secondary); /* Change the color */
-  font-weight: 800; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1.6rem; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+.problem__list i {
+  color: var(--color-secondary);
+  margin-right: 1rem;
+  font-size: 1rem;
 }
 /* help */
 .help {
@@ -333,8 +332,6 @@ a.learn_more2:hover {
   color: #8a8a8a;
   font-size: 1.8rem;
   font-weight: 400;
-  padding-top: 3rem;
-  padding-bottom: 6rem;
 }
 .form__submit {
   cursor: pointer;
@@ -345,6 +342,7 @@ a.learn_more2:hover {
   color: white;
   border: none;
   margin-top: 2rem;
+  width: 100%;
 }
 .form__label {
   font-size: 1.8rem;
@@ -424,7 +422,7 @@ a.learn_more2:hover {
     margin-bottom: 4rem;
   }
   a.learn_more2 {
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
     font-size: 2.4rem;
   }
 
