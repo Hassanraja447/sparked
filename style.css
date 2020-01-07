@@ -155,7 +155,9 @@ body {
 
 /* Top_content
 ---------------------------------*/
-
+#top_content_mobile {
+  height: 100vh;
+}
 .top_cont_outer {
   background-color: var(--color-primary);
   position: relative;
