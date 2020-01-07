@@ -23,7 +23,44 @@
   </head>
   <body>
     <!--Top_content-->
-    <section id="top_content" class="top_cont_outer section-gutter">
+    <section
+      id="top_content_mobile"
+      class="top_cont_outer section-gutter d-md-none"
+    >
+      <!--Header_section-->
+      <header id="header_outer">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center text-lg-left">
+              <div class="logo ">
+                <a href="index.html">sparked.it</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Header_section-->
+      <div class="container mt-3 mt-md-5 ">
+        <div class="row ">
+          <div class="col-12 col-lg-6 order-2 order-lg-1 mb-5 mb-lg-0">
+            <div
+              class="top_left_cont flipInY wow animated text-center text-lg-left"
+            >
+              <h2>Never lose a customer again</h2>
+              <p>
+                Help your customers discover and purchase new wines and spirits.
+                Bring influential wine & spirit reviews to your website.
+              </p>
+
+              <a href="#service" class="learn_more2">Become a customer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Top_content-->
+    <section id="top_content" class="top_cont_outer section-gutter d-none d-md-block">
       <!--Header_section-->
       <header id="header_outer">
         <div class="container">
@@ -431,4 +468,35 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    //Array of images which you want to show: Use path you want.
+    const images = new Array("img/img-1.png", "img/img-2.png", "img/img-3.png");
+    let nextimage = 0;
+    const header = document.querySelector("#top_content");
+    doSlideshow();
+
+    function doSlideshow() {
+      if (nextimage >= images.length) {
+        nextimage = 0;
+      }
+
+      $("#top_content_mobile")
+        .css({
+          "background-image":
+            ' linear-gradient(to right, rgba(35, 76, 139, 0.7),rgba(35, 76, 139, 0.7)), url("' +
+            images[nextimage++] +
+            '")',
+          "background-size": "cover",
+          "background-position": "left 100%"
+        })
+        .fadeIn(500, function() {
+          setTimeout(doSlideshow, 3000);
+        });
+    }
+  </script>
 </html>
