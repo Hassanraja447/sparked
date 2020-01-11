@@ -52,7 +52,7 @@
                 by bringing influential wine & spirit reviews to your website.
               </p>
 
-              <a href="#service" class="learn_more2">Become a customer</a>
+              <a href="#contact" class="learn_more2">Become a customer</a>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@
                 by bringing influential wine & spirit reviews to your website.
               </p>
 
-              <a href="#service" class="learn_more2">Become a customer</a>
+              <a href="#contact" class="learn_more2">Become a customer</a>
             </div>
           </div>
           <div
@@ -156,20 +156,26 @@
         <div class="container problem__container">
           <div class="row">
             <div class="col">
-              <p class="h3 font-weight-medium">
-               Are you having difficulty building a loyal customer base?
-              </p>
-              <p class="h3 font-weight-medium">
-                Do you experience a low conversion rate when it comes to online
-                purchases?
-              </p>
               <ul class="problem__list">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-circle "></i>
+                  <li>
+                    Are you having difficulty building a loyal customer base?
+                  </li>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-circle "></i>
+                  <li>
+                    Do you experience a low conversion rate when it comes to
+                    online purchases?
+                  </li>
+                </div>
                 <div class="d-flex align-items-center">
                   <i class="fas fa-circle "></i>
                   <li>
                     While your customer is in the middle of online shopping, do
                     you notice they tend to randomly abandon your site without
-                    any explanation.
+                    any explanation?
                   </li>
                 </div>
                 <div class="d-flex align-items-center">
@@ -339,7 +345,7 @@
         </div>
       </div>
     </section>
-    <section class="contact ">
+    <section class="contact " id="contact">
       <div class="container">
         <div class="row">
           <div class="col offset-sm-1 text-center text-lg-left">
@@ -504,5 +510,19 @@
           setTimeout(doSlideshow, 3000);
         });
     }
+    $(document).ready(function() {
+      $(".learn_more2").click(function() {
+        $("html, body").animate(
+          {
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+          },
+          {
+            duration: 1000,
+            easing: "swing"
+          }
+        );
+        return false;
+      });
+    });
   </script>
 </html>
